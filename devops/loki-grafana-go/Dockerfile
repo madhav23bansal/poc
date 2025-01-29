@@ -26,7 +26,7 @@ WORKDIR /app
 COPY --from=builder /app/main .
 
 # Copy the .env file (if it exists)
-COPY .env .env
+# COPY .env .env
 
 # Expose port 8080 (or whichever port your app uses)
 EXPOSE 8080
